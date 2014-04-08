@@ -1,0 +1,24 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+
+  <header class="bk-header">
+      <div class="header-container wrapper clearfix">
+        <div class="companyheader wrapper clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        </div>
+          {{widget('extendednavigation', 'navigationheader', {})|raw}}
+      </div>
+  </header> 
+
+<div class="canvas">
+	<div class="page-wrap">
+		<section class="section main home-page">
+			{{zone('main')|raw}}
+		</section>
+	</div>
+</div>
+
+{% endblock %}
