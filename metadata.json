@@ -14,9 +14,9 @@
             "color2":"#b28552",
             "color3":"#b28552",
             "color4":"#e15b20",
-            "color5":"#000000",
+            "color5":"#aaaaaa",
             "color6":"#b28552",
-            "color7":"#ffffff"
+            "color7":"#000000"
         },
         "Swatch 2": {
             "color1":"#ffffff",
@@ -58,19 +58,19 @@
     "fontSwatch": {
        "title": "Josefin Sans",
         "font1": {
-            "font-family": "\"Josefin Sans\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"lato\", Geneva, Tahoma, sans-serif",
             "font-size": "32px",
             "font-weight": "300",
             "line-height": "38px",
-            "color": "@color-swatch5",
+            "color": "@color-swatch7",
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Josefin Sans\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"lato\", Geneva, Tahoma, sans-serif",
             "font-size": "26px",
-            "font-weight": "300",
+            "font-weight": "400",
             "line-height": "32px",
-            "color": "@color-swatch5",
+            "color": "@color-swatch7",
             "letter-spacing": "inherit"
         },
         "font3": {
@@ -78,31 +78,31 @@
             "font-size": "22px",
             "font-weight": "300",
             "line-height": "30px",
-            "color": "@color-swatch5",
+            "color": "@color-swatch7",
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Josefin Sans\", Geneva, Tahoma, sans-serif",
-            "font-size": "18px",
-            "font-weight": "300",
-            "line-height": "24px",
-            "color": "@color-swatch5",
+            "font-family": "\"vollkorn\", Geneva, Tahoma, sans-serif",
+            "font-size": "42px",
+            "font-weight": "400",
+            "line-height": "55px",
+            "color": "@color-swatch7",
             "letter-spacing": "inherit"
         },
         "font5": {
-            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
+            "font-family": "\"myriad pro\", Helvetica, Verdana, sans-serif",
             "font-size": "15px",
-            "font-weight": "300",
-            "line-height": "24px",
+            "font-weight": "400",
+            "line-height": "26px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
+            "font-family": "\"lato\", Helvetica, Verdana, sans-serif",
             "font-size": "16px",
-            "font-weight": "400",
+            "font-weight": "700",
             "line-height": "30px",
-            "color": "@color-swatch6",
+            "color": "@color-swatch1",
             "letter-spacing": "inherit",
             "color-hover": "@color-swatch5",
             "background-color": "@color-swatch7",
@@ -135,12 +135,12 @@
             "letter-spacing": "inherit"
         },
         "font10": {
-            "font-family": "\"Josefin Sans\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"vollkorn\", Geneva, Tahoma, sans-serif",
             "font-size": "34px",
             "font-weight": "700",
             "line-height": "42px",
-            "color": "@color-swatch7",
-            "letter-spacing": "5px"
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
         }
     }
 }

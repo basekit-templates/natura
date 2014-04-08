@@ -4,19 +4,20 @@
 {% block content %}
 
   <header class="bk-header">
-      <div class="header-container wrapper clearfix">
-        <div class="companyheader wrapper clearfix">
+      <div class="companyheader wrapper clearfix">
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-        </div>
-          {{widget('extendednavigation', 'navigationheader', {})|raw}}
-      </div>
+            {{widget('companyname', 'companyname', {"business": "Natura."})|raw}}
+          	{{widget('extendednavigation', 'navigationheader', {})|raw}}
+       </div>
   </header> 
 
 <div class="canvas">
 	<div class="page-wrap">
 		<section class="section main home-page">
-			{{zone('main')|raw}}
+			<div class="textbox">
+				<span>{{widget('content', 'textwidgetbox1', {content: '<h4>Lorem ipsum dolor sit amet.</h4>', lines: 'all'})|raw}}</span>
+			</div>
+				{{zone('main')|raw}}
 		</section>
 	</div>
 </div>
