@@ -118,9 +118,13 @@ input[type=submit],
 	}
 }
 
-.widget.profile span {
-	margin:0px auto;
-	display:table;
+span h4 {
+	font-family:@font-swatch9-font-family; 
+	font-weight: @font-swatch9-font-weight; 
+	color:@font-swatch9-color; 
+	line-height:@font-swatch9-line-height; 
+	letter-spacing: @font-swatch9-letter-spacing; 
+	font-size: @font-swatch9-font-size;
 }
 
 /* ===============================
@@ -438,30 +442,29 @@ hr.line {
 button.btn,
 .widget.profile form button,
 .signupform fieldset button,
-.blog-search-submit-button,
 .widget.feature .feature-bgimg .content button.btn,
 .contactform button.btn,
 .widget.clicktocall a,
 .widget.clicktocall a:hover {
-	padding: 10px 14px 8px 14px;
+	padding: 7px 14px 10px 14px;
+}
+
+.blog-search-submit-button {
+	padding:10px 14px 8px 14px
 }
 
 .widget.tweet a:hover {
-	color: @color-swatch7;
+	color: @color-swatch1;
 	padding-bottom: 14px;
 }
 
 .widget.clicktocall a {
-	border: 2px solid @color-swatch3;
+	border: 2px solid @color-swatch7;
 	display: inline-block;
 	margin-bottom: 1em;
 	&:hover {
-		border-color: darken(@color-swatch3, 10%);
+		border-color: lighten(@color-swatch7, 20%);
 	}
-}
-
-.widget.profile form button {
-	padding: 10px 14px 8px;
 }
 
 /*
@@ -521,7 +524,6 @@ button.btn,
 
 .menu-name-background {
 	margin-bottom:10px;
-	background-image: image('/images/wood-bg.jpg');
 }
 
 .main .menu-items .inner-item {
@@ -645,7 +647,6 @@ body {
 		background-size: cover;
 		background-position: center center;
 		padding: 2px;
-		border: 1px solid darken(@color-swatch7, 20%);
 	}
 }
 
@@ -777,6 +778,11 @@ header.bk-header .header-left .widget.profile span {
     line-height:@font-swatch7-line-height;
     letter-spacing: @font-swatch7-letter-spacing;
     font-size: @font-swatch7-font-size;    
+}
+
+.widget.profile span {
+	margin:0px auto;
+	display:table;
 }
 
 .widget.companyname a {
@@ -938,19 +944,12 @@ span.cross {
 	}
 }
 
-.menu-header h1 {
-	color:@font-swatch10-color;
-	padding:10px;
-	font-weight:@font-swatch10-font-weight;
-	letter-spacing: @font-swatch10-letter-spacing;
-}
-
 h1, h2, h3, h4, h5, h6 {
 	padding-bottom:0;
 }
 
 .textbox {
-	padding:40px;
+	padding:80px;
 	text-align:center;
 }
 
@@ -1101,7 +1100,7 @@ h1, h2, h3, h4, h5, h6 {
 			overflow: hidden;
 			width: 30px;
 			height: 30px;
-			border: 2px solid fadeout(@color-swatch7, 10%);
+			border: 2px solid @color-swatch1;
 			border-radius: 100%;
 			&:after {
 				position: absolute;
