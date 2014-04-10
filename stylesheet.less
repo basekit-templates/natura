@@ -658,7 +658,7 @@ header.bk-header, .nav {
 }
 header.bk-header {
 	width: 100%;
-	background-color:rgba(0, 0, 0, 0.20);
+	background-color:rgba(0, 0, 0, 0.10);
 	padding:100px 0px;
 	.aside, .centre {
 		width: 100%;
@@ -720,10 +720,6 @@ footer.bk-footer h3 {
 	display: table;
 }
 
-.footer-border {
-	border-top:1px solid lighten(@color-swatch5,20%);
-	padding-top:40px;
-}
 .article, .menu-item {
 	clear: both;
 	small {
@@ -792,8 +788,18 @@ header.bk-header .header-left .widget.profile span {
 	display:table;
 }
 
+.widget.profile {
+	border-top:1px solid lighten(@color-swatch7,90%);
+	padding-top:40px;
+}
+
 .widget.companyname a {
 	float:left;
+}
+
+.bk-profile-email, .widget.profile form, .widget.profile span, .widget.profile .bk-profile-socialicons, .widget.profile ul.twitter {
+	margin: 0px auto;
+	display: table;
 }
 
 /*	===============================
@@ -1011,7 +1017,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .widget.blogsearch {
-	text-align: right;
 	display:block;
 	clear:both;
 	label {
@@ -1388,6 +1393,9 @@ a.blog-post-more-link, .blog-list-footer a {
 		width:100%;
 		padding-top:20px;
 	}
+	.widget.blogsearch input[type=search] {
+		width:65%;
+	}
 }
 @media @mobile {
 	.widget {
@@ -1418,7 +1426,7 @@ a.blog-post-more-link, .blog-list-footer a {
 	}
 
 	.menu-name {
-		font-size: bkscale(@font-swatch1-font-size, 0.6);
+		font-size: bkscale(@font-swatch1-font-size, 0.8);
 	}
 	.widget.menusections {
 		margin:0;
@@ -1430,17 +1438,17 @@ a.blog-post-more-link, .blog-list-footer a {
 		padding: 0;
 	}
 	.menu-item h3, .main .menu-subsection h2 {
-		font-size: bkscale(@font-swatch4-font-size, 0.8);
+		font-size: bkscale(@font-swatch4-font-size, 1);
 	}
 	p, ul, ol, li, .p-font, .main p, .dietary-icon, .menu .menu-section-item-dietary-props .dietary-icon {
-		font-size: bkscale(@font-swatch5-font-size, 0.8);
+		font-size: bkscale(@font-swatch5-font-size, 1);
 	}
 	.widget.feature .feature-bgimg h2 {
 		font-size: bkscale(@font-swatch8-font-size, 0.6);
 		line-height: bkscale(@font-swatch8-line-height, 0.7);
 	}
 	.widget.feature .feature-bgimg h3 {
-		font-size: bkscale(@font-swatch9-font-size, 0.7);
+		font-size: bkscale(@font-swatch9-font-size, 0.6);
 		line-height: bkscale(@font-swatch9-line-height, 0.8);
 	}
 	.widget.menusections ul {
@@ -1450,5 +1458,8 @@ a.blog-post-more-link, .blog-list-footer a {
 		margin-bottom:40px;
 		width:100%;
 		padding-top:20px;
+	}
+	.widget.blogsearch input[type=search] {
+		width:45%;
 	}
 }
