@@ -2,41 +2,30 @@
 {% extends "layout.twig" %}
 
 {% block content %}
-
 <div class="bk-pt-default">
-	<div class="texture-header">
-	</div>
+  <header class="bk-header">
+      <div class="companyheader wrapper clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "Natura."})|raw}}
+          	{{widget('extendednavigation', 'navigationheader', {})|raw}}
+       </div>
+  </header> 
 
-	<header class="bk-header">
-		<div class="logo">
-			{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-		</div>
-		    <div class="companyheader wrapper clearfix">
-		        <div class="header-left">
-		            {{widget('profile', 'headercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
-		        </div>
-		        <div class="header-center">
-		            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-		        </div>
-		        <div class="header-right">
-		        	{{widget('profile', 'headercolumn1profileAddress', { 'profileType':'address', 'address':'profile'})|raw}} 
-		        </div>
-		    </div>       
-	</header>
-
-	<div class="canvas">
-			<nav class="nav">
-				{{widget('extendednavigation', 'navigationheader', {})|raw}}
-			</nav>
-		<div class="page-wrap">
-			<section class="section main home-page">
+<div class="canvas">
+	<div class="page-wrap">
+		<section class="section main home-page">
+			<div class="textbox">
+				<span>{{widget('content', 'textwidgetbox1', {content: '<h4>Lorem ipsum dolor sit amet.</h4>', lines: 'all'})|raw}}</span>
+			</div>
 				{{zone('main')|raw}}
-			</section>
-		</div>
-	</div>
-
-	<div class="texture-footer">
+		</section>
 	</div>
 </div>
 
+	<footer class="bk-footer">
+		<div class="footer-border page-wrap">
+		{{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'profile', 'refreshtime':'1800000'})|raw}}
+		</div>
+	</footer>
+</div>
 {% endblock %}
