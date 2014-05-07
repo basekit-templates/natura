@@ -179,7 +179,7 @@ span h4 {
                     ul {
                         display: block !important;
                         position: absolute;
-                        background-color: @color-swatch7;
+                        background-color: lighten(@color-swatch7,20%);
                         z-index: 500;
                         padding: 0;
                         margin: 3px 0 0 0;
@@ -332,10 +332,6 @@ span h4 {
 
 .widget.extendednavigation ul li.folder .text:hover {
   text-decoration: underline;
-}
-
-.widget .extendednavigation ul.align-center li:hover li {
-    text-align:left;
 }
 
 .widget .extendednavigation a.pull:after {
@@ -579,7 +575,6 @@ body {
 
 .companyname {
 	padding: 16px 0px;
-	width: 30%;
 	float: left;
 }
 
@@ -1337,11 +1332,6 @@ a.blog-post-more-link, .blog-list-footer a {
 	.widget .extendednavigation ul li:last-child {
 		border-bottom:0;
 	}
-	.widget.extendednavigation .bk-overlay {
-		width: 19px;
-		left: inherit !important;
-		margin-top: 20px;
-	}
 
 	.widget .extendednavigation {
 		min-height:0;
@@ -1386,7 +1376,7 @@ a.blog-post-more-link, .blog-list-footer a {
 		line-height:bkscale(@font-swatch4-line-height,1.2);
 	}
 	.textbox {
-		padding: 30px 0px 10px 0px;
+		padding: 30px 0px;
 	}
 	.main .blog-post-metadata {
 		margin-bottom:40px;
