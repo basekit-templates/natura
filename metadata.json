@@ -2,10 +2,11 @@
 	"name":"Natura",
 	"thumbnail":"natura.png",
 	"screenshot":"natura.png",
+	"templateType":"blog",
     "pageTypes": [
         "home",
         "default",
-        "bloglistposts",
+        "blogpostlist",
         "blogpost"
     ],
     "tags": {
