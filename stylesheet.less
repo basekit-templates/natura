@@ -128,7 +128,10 @@ span h4 {
 
 .widget {
     .extendednavigation {
+        float: none;
         position: relative;
+        display: inline-block;
+        float: right;
         min-height: 50px;
         @media @tablet {
             background-color: transparent;
@@ -140,6 +143,7 @@ span h4 {
             }
         }
         ul {
+            float: right;
             text-align: center;
             padding: 0;
             @media @tablet {
@@ -1208,8 +1212,9 @@ a.blog-post-more-link, .blog-list-footer a {
 	font-size: @font-swatch1-font-size;
 }
 
-.column, .column:nth-of-type(1) {
-	width:none;
+.responsivecolumns .columns-two-left, .columns-two-50-50 .columns-two-left {
+	width: 48.5%!important;
+	margin-right: 1.5%;
 }
 
 /*	===============================
