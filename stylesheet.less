@@ -92,6 +92,8 @@ input[type=submit],
 	border:0;
 	color:@font-swatch7-color;
 	background-color:@color-swatch3;
+	display: inline-block;
+	margin-bottom: 1em;
 	&:hover {
 		background-color:lighten(@color-swatch3,20%);
 	}
@@ -99,7 +101,7 @@ input[type=submit],
 
 .logo {
 	float:left;
-	img { width:30px;
+	img {
 		h1 {
 			font-family:@font-swatch10-font-family; 
 			font-weight: @font-swatch10-font-weight; 
@@ -354,7 +356,6 @@ textarea,
 	transition: box-shadow .2s;
 	background-color:darken(@color-swatch1,10%);
 	&:focus {
-		border: 1px solid darken(@color-swatch7, 20%);
 		box-shadow: 0 0 5px @color-swatch5;
 	}
 }
@@ -442,15 +443,6 @@ button.btn,
 .widget.tweet a:hover {
 	color: @color-swatch1;
 	padding-bottom: 14px;
-}
-
-.widget.clicktocall a {
-	border: 2px solid @color-swatch7;
-	display: inline-block;
-	margin-bottom: 1em;
-	&:hover {
-		border-color: lighten(@color-swatch7, 20%);
-	}
 }
 
 /*
@@ -566,7 +558,7 @@ body {
 }
 
 .main {
-	padding: 1em 2em 1.5em 2em;
+	padding: 2em;
 	clear: both;
 	text-align:left;
 	.menu-items {
@@ -756,7 +748,7 @@ header.bk-header .header-left .widget.profile span {
 	float:none;
 }
 
- .widget.profile span {
+ .widget.profile span, .widget.profile p {
     font-family:@font-swatch4-font-family;
     font-weight: @font-swatch4-font-weight;
     color:@font-swatch4-color;
@@ -773,6 +765,7 @@ header.bk-header .header-left .widget.profile span {
 .widget.profile {
 	border-top:1px solid lighten(@color-swatch7,90%);
 	padding-top:40px;
+	text-align:center;
 }
 
 .widget.companyname a {
@@ -938,9 +931,16 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom:0;
 }
 
-.textbox {
-	padding:80px;
-	text-align:center;
+#textwidgetbox1 {
+	padding:4em 0 6em;
+}
+
+#textwidgetbox1.bk-tpl-hidden {
+	padding:0;
+}
+
+#page-zones__template-widgets__content-textwidgetbox1 {
+	padding:4em 0 6em;
 }
 
 /*	===============================
