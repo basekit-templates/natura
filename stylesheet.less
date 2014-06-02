@@ -987,6 +987,9 @@ h1, h2, h3, h4, h5, h6 {
 	margin:20px 0px;
 	width: 100%;
 	display: inline-block;
+	.blog-post-title {
+		margin-top:60px;
+	}
 } 
 
 .blog-post-list .blog-post-feature-image-wrap {
@@ -1027,10 +1030,7 @@ h1, h2, h3, h4, h5, h6 {
 	display:block;
 	clear:both;
 	label {
-		height: 0;
-		text-indent: -200px;
-		overflow: hidden;
-		padding-top: 0;
+		display: block;
 	}
 	input[type=search], input[type=search]:focus {
 		width: 75%;
@@ -1086,6 +1086,8 @@ h1, h2, h3, h4, h5, h6 {
 .widget.blogpost .blog-post-item .blog-post-feature-image-wrap {
 	background-image: none !important;
     margin: 2em 0;
+    background-color: darken(@color-swatch1,3%);
+    padding: 1em;
     img {
 	    display: block;
 	    height: auto;
@@ -1102,7 +1104,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .blog-post-title {
-	margin-top:60px;
 	margin-bottom: 1em;
 }
 
