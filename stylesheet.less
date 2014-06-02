@@ -449,6 +449,22 @@ button.btn,
 	padding-bottom: 14px;
 }
 
+/* 
+   BLOCK QUOTE
+*/
+
+  blockquote {
+    background-color: transparent;
+    margin: 20px;
+    @media @mobile {
+        margin: 0 5px;
+    }
+    &:before {
+        color: @color-swatch3;
+    }
+  }
+
+
 /*
 	TWITTER
 */
@@ -593,13 +609,11 @@ body {
 		text-align: center;
 		h2 {
 			color: @color-swatch4;
-			font-size: @font-swatch4-font-size;
 		}
 		.menu-subsection-header {
 			margin-bottom: 1em;
 			h2 {
 				margin-top: 1em;
-				line-height: @font-swatch4-line-height;
 			}
 		}
 	}
@@ -713,7 +727,7 @@ footer.bk-footer h3 {
 
 .menu-subsection-wrapper.menu-subsection-promoted {
 	padding:20px;
-	border: 3px solid @color-swatch3;
+	border: 3px solid @color-swatch4;
 }
 
 .menu-item-promoted {
@@ -1215,10 +1229,6 @@ gallery-page .widget.responsiveslideshow .slideshow-widget .btn-play,
 	font-size: @font-swatch4-font-size;
 }
 
-.main .menu-subsection h2 {
-	font-weight:@font-swatch6-font-weight;
-	font-size: @font-swatch1-font-size;
-}
 
 /*	===============================
 	Ecom
@@ -1236,7 +1246,7 @@ gallery-page .widget.responsiveslideshow .slideshow-widget .btn-play,
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px;
-    background-image: image('/images/arrow.png');
+    background-image: image('/images/arrow-down.png');
     background-position: right 6% center;
     background-repeat: no-repeat;
     border: 0;
@@ -1258,7 +1268,7 @@ select {
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px;
-    background-image: image('/images/arrow.png');
+    background-image: image('/images/arrow-down.png');
     background-position: right 6% center;
     background-repeat: no-repeat;
     border: 0;
