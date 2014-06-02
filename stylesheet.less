@@ -561,7 +561,7 @@ body {
 	float: left;
 }
 
-.main {
+.widget.menu .main {
 	padding: 2em;
 	clear: both;
 	text-align:left;
@@ -591,7 +591,6 @@ body {
 	.menu-subsection {
 		list-style: none;
 		text-align: center;
-		border: 3px solid @color-swatch3;
 		h2 {
 			color: @color-swatch4;
 			font-size: @font-swatch4-font-size;
@@ -708,11 +707,13 @@ footer.bk-footer h3 {
 .main .menu-subsection {
 	border:0;
 	background-color:transparent;
+	padding: 4% 0;
+	margin: 0;
 }
 
 .menu-subsection-wrapper.menu-subsection-promoted {
-	background-color: rgba(1, 1, 1, 0.05);
 	padding:20px;
+	border: 3px solid @color-swatch3;
 }
 
 .menu-item-promoted {
@@ -982,9 +983,9 @@ h1, h2, h3, h4, h5, h6 {
 .blog-post-list .blog-post-item {
 	text-shadow: 0 0 8px @color-swatch1;
 	position: relative;
-	margin-bottom: 40px;
-	border-top:1px solid lighten(@color-swatch7,90%);
-	margin:20px 0px;
+	border-bottom:1px solid lighten(@color-swatch7,90%);
+	margin: 0px;
+	padding: 0 0 3em;
 	width: 100%;
 	display: inline-block;
 	.blog-post-title {
@@ -1058,7 +1059,7 @@ h1, h2, h3, h4, h5, h6 {
 // 7. Blog Post
 
 .main .blog-post-metadata {
-	border-top: 1px solid darken(@color-swatch1, 10%);
+	border-top: 1px solid darken(@color-swatch1,10%);
 	width:100%;
 	padding-top:20px;
 }
@@ -1086,8 +1087,6 @@ h1, h2, h3, h4, h5, h6 {
 .widget.blogpost .blog-post-item .blog-post-feature-image-wrap {
 	background-image: none !important;
     margin: 2em 0;
-    background-color: darken(@color-swatch1,3%);
-    padding: 1em;
     img {
 	    display: block;
 	    height: auto;
