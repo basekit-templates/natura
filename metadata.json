@@ -122,8 +122,8 @@
             "line-height": "26px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit",
-            "background-color": "@color-swatch7",
-            "background-color-hover": "darken(@color-swatch7,10%)"
+            "background-color": "@color-swatch3",
+            "background-color-hover": "@color-swatch2"
         },
         "font8": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
