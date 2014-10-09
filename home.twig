@@ -7,7 +7,9 @@
     <div class="companyheader wrapper clearfix">
           {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
           {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-          {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
+          <div class="addednav">
+            {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
+          </div>
      </div>
 </header> 
 
