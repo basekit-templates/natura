@@ -3,7 +3,8 @@
 	"thumbnail":"natura.png",
 	"screenshot":"natura.png",
 	"templateType":"blog",
-    
+    "pageTypes":["home"],
+    "images":["/images/feature-bg.jpg"],
     "tags": {
     "en": ["clean", "nature", "white", "modern", "blog", "professional", "simple", "sans serif"],
     "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
