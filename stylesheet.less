@@ -130,6 +130,14 @@ span h4 {
 	font-size: @font-swatch9-font-size;
 }
 
+.widget {
+    &.logo, &.companyname {
+        vertical-align: middle;
+        margin: 0px auto;
+        display: table;
+    }
+}
+
 /* ===============================
    EXTENDED NAVIGATION
    =============================== */
@@ -137,6 +145,8 @@ span h4 {
 .widget {
     .extendednavigation {
         min-height: 50px;
+        float:right;
+        .clearfix;
         @media @tablet {
             background-color: transparent;
             width:100%;
