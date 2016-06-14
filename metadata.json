@@ -1,7 +1,7 @@
 {
 	"name":"Natura",
 	"thumbnail":"natura.png",
-	"screenshot":"natura.png",
+	"screenshot":"natura-screenshot.jpg",
 	"templateType":"blog",
     "pageTypes":["home"],
     "images":["/images/feature-bg.jpg"],
