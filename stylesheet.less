@@ -374,7 +374,9 @@ input[type=text],
 input[type=email],
 textarea,
 .widget.profile form fieldset input,
-.signupform fieldset input {
+.signupform fieldset input,
+.advancedcontactform input,
+.advancedcontactform textarea {
 	border: 0;
 	padding: 5px 10px;
 	text-indent: 0;
@@ -387,12 +389,14 @@ textarea,
 		box-shadow: 0 0 5px @color-swatch5;
 	}
 }
+
 textarea {
 	resize: vertical;
 	min-height: 150px;
 	margin-bottom:20px;
 	width:100%;
 }
+
 input[type=search],
 input[type=text],
 input[type=email],
@@ -411,6 +415,23 @@ input[type="search"]::-webkit-search-decoration {
 	display: none;
 }
 
+// Advanced Contact Form
+.advancedcontactform {
+    .label {
+        margin-bottom: 10px;
+    }
+    .input {
+        width: 100%;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    select {
+        margin-top: 10px;
+        background-position-x: 98%;
+    }
+}
+
 /*
 	BUTTONS
 */
@@ -424,7 +445,8 @@ button.btn,
 .widget.paypalbuynow .widget.button.paypal,
 .widget.tweet a,
 .widget.dropbox button,
-.widget.socialicons span a {
+.widget.socialicons span a,
+.advancedcontactform button {
 	background-color: @color-swatch7;
 	border: none;
 	-webkit-transition: background-color .2s;
