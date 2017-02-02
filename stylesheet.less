@@ -141,6 +141,10 @@ span h4 {
 .widget.companyname {
 	width:30%;
 	display:inline-block;
+    @media @tablet {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* ===============================
@@ -151,6 +155,9 @@ span h4 {
 	width: 68%;
 	float: right;
 	.clearfix;
+    @media @tablet {
+        width: 100%;
+    }
 }
 
 .widget {
@@ -350,6 +357,12 @@ span h4 {
 
 .widget.extendednavigation ul li.folder .text:hover {
   text-decoration: underline;
+}
+
+.widget .extendednavigation a.pull {
+    @media @tablet {
+        left: 0;
+    }
 }
 
 .widget .extendednavigation a.pull:after {
@@ -835,6 +848,9 @@ header.bk-header .header-left .widget.profile span {
 
 .widget.companyname a {
 	float:left;
+    @media @tablet {
+        float: initial;
+    }
 }
 
 .bk-profile-email, .widget.profile form, .widget.profile span, .widget.profile .bk-profile-socialicons, .widget.profile ul.twitter {
