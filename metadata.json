@@ -1,5 +1,6 @@
 {
 	"name":"Natura",
+	"versionTenCompatible": 1,
 	"thumbnail":"natura.png",
 	"screenshot":"natura-screenshot.jpg",
 	"templateType":"blog",
