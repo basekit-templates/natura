@@ -29,7 +29,7 @@
 	{% include basekit.headScript %}
 </head>
 
-<body class="{{ page.backgroundClass }} bk-body-default">
+<body class="{{ page.backgroundClass }} bk-body-default" {{ isV10sSite ? 'id="migrated-site"' : '' }}>
 
 	{% block content %}
 
